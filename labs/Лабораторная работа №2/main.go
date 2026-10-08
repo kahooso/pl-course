@@ -1,8 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	a := parse("SEND + MORE = MONEY")
-	fmt.Println(a.addends, a.result, string(a.letters), a.lead)
+	puzzles := []string{
+		"BE + BE = MOO",
+		"SEND + MORE = MONEY",
+		"ELEVEN + NINE + FIVE + FIVE = THIRTY",
+	}
+
+	for _, p := range puzzles {
+		start := time.Now()
+		res := solveV0(p)
+		fmt.Printf("%-40s → %-35s %v\n", p, res, time.Since(start))
+	}
 }

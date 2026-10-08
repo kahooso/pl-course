@@ -2,7 +2,7 @@ package main
 
 type alphametic struct {
 	addends []string
-	result string
+	result  string
 	letters []rune
-	lead map[rune]bool
+	lead    map[rune]bool
 }

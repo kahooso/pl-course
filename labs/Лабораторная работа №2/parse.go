@@ -8,7 +8,7 @@ func parse(s string) alphametic {
 	parts := strings.Split(s, "=")
 
 	for _, w := range strings.Split(parts[0], "+") {
-		a.addends = append(a.addends, strings.TrimSpace(w)) 
+		a.addends = append(a.addends, strings.TrimSpace(w))
 	}
 
 	a.result = strings.TrimSpace(parts[1])
@@ -33,4 +33,3 @@ func parse(s string) alphametic {
 
 	return a
 }
-
