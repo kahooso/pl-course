@@ -11,6 +11,7 @@ var solvers = []struct {
 	solve func(string) string
 }{
 	{"V0", solveV0},
+	{"V1", solveV1},
 }
 
 var testPuzzles = []struct {
