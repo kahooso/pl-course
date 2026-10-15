@@ -13,6 +13,7 @@ var solvers = []struct {
 	{"V0", solveV0},
 	{"V1", solveV1},
 	{"V2", solveV2},
+	{"V4", solveV4},
 }
 
 var testPuzzles = []struct {
