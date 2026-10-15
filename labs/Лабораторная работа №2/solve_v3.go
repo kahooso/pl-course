@@ -2,7 +2,7 @@ package main
 
 import "sort"
 
-func solveV4(s string) string {
+func solveV3(s string) string {
 	a := parse(s)
 	n := len(a.letters)
 	weight, lead := prepare(a)

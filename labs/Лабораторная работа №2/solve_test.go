@@ -13,7 +13,7 @@ var solvers = []struct {
 	{"V0", solveV0},
 	{"V1", solveV1},
 	{"V2", solveV2},
-	{"V4", solveV4},
+	{"V3", solveV3},
 }
 
 var testPuzzles = []struct {
@@ -22,7 +22,9 @@ var testPuzzles = []struct {
 }{
 	{"BE", "BE + BE = MOO"},
 	{"SEND", "SEND + MORE = MONEY"},
+	{"BIG", "BIG + CAT = LION"},
 	{"ELEVEN", "ELEVEN + NINE + FIVE + FIVE = THIRTY"},
+	{"SEVEN", "ONE + ONE + ONE + ONE + ONE + TWO + SEVEN = NINETY"},
 }
 
 func valid(puzzle, res string) bool {
